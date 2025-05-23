@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>江戸時代に生成AIがあったら？🎭✨</title>
+    <meta name="description" content="武士も商人も、みんなでAI活用！江戸時代と現代AI技術の楽しい融合を体験できるインタラクティブサイト">
+    <meta name="keywords" content="江戸時代, 生成AI, ChatGPT, 浮世絵, 侍, 芸者, 歴史, AI技術">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sunwood-ai-labs.github.io/edo-ai-site/">
+    <meta property="og:title" content="江戸時代に生成AIがあったら？🎭✨">
+    <meta property="og:description" content="武士も商人も、みんなでAI活用！江戸時代と現代AI技術の楽しい融合">
+    <meta property="og:image" content="./assets/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://sunwood-ai-labs.github.io/edo-ai-site/">
+    <meta property="twitter:title" content="江戸時代に生成AIがあったら？🎭✨">
+    <meta property="twitter:description" content="武士も商人も、みんなでAI活用！江戸時代と現代AI技術の楽しい融合">
+    <meta property="twitter:image" content="./assets/og-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
+
+    <!-- Google Fonts - 日本語フォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;700;900&family=Zen+Maru+Gothic:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="modal-styles.css">
+</head>
+<body>
+    <!-- ヘッダーセクション -->
+    <header id="header" class="hero-section">
+        <div class="hero-bg">
+            <div class="particles" id="particles"></div>
+            <div class="edo-pattern"></div>
+        </div>
+        
+        <nav class="navigation">
+            <div class="nav-container">
+                <div class="nav-logo">🎭 EDO × AI</div>
+                <ul class="nav-menu">
+                    <li><a href="#characters">人物</a></li>
+                    <li><a href="#experience">体験</a></li>
+                    <li><a href="#knowledge">知識</a></li>
+                    <li><a href="#future">未来</a></li>
+                </ul>
+                <div class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+
+        <div class="hero-content">
+            <div class="title-container">
+                <h1 class="main-title">
+                    <span class="title-line">江戸時代に</span>
+                    <span class="title-line highlight">生成AI</span>
+                    <span class="title-line">があったら？</span>
+                </h1>
+                <p class="subtitle">
+                    武士も商人も、みんなでAI活用！<br>
+                    現代技術と江戸文化の楽しい融合
+                </p>
+                <div class="cta-buttons">
+                    <a href="#characters" class="btn btn-primary">体験開始</a>
+                    <a href="#knowledge" class="btn btn-secondary">詳しく知る</a>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="character-preview">
+                    <div class="character-card samurai">👨‍💼</div>
+                    <div class="character-card merchant">🏪</div>
+                    <div class="character-card artisan">🎨</div>
+                    <div class="character-card geisha">🎭</div>
+                    <div class="character-card scholar">📚</div>
+                    <div class="character-card farmer">🌾</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <span>スクロールして探索</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </header>
+
+    <!-- キャラクター紹介セクション -->
+    <section id="characters" class="characters-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-decoration">🎭</span>
+                江戸の人々とAIの出会い
+                <span class="title-decoration">✨</span>
+            </h2>
+            
+            <div class="characters-grid">
+                <!-- 武士 -->
+                <div class="character-item" data-character="samurai">
+                    <div class="character-avatar">
+                        <div class="avatar-icon">👨‍💼</div>
+                        <div class="ai-badge">ChatGPT</div>
+                    </div>
+                    <div class="character-info">
+                        <h3 class="character-name">武田信之助</h3>
+                        <p class="character-role">武士</p>
+                        <p class="character-quote">「このChatGPTとやら、まさに現代の軍師じゃ！」</p>
+                        <div class="character-ai-uses">
+                            <span class="ai-use">俳句生成</span>
+                            <span class="ai-use">兵法解釈</span>
+                            <span class="ai-use">手紙代筆</span>
+                        </div>
+                        <button class="character-detail-btn" data-character="samurai">詳しく見る</button>
+                    </div>
+                </div>
+
+                <!-- 商人 -->
+                <div class="character-item" data-character="merchant">
+                    <div class="character-avatar">
+                        <div class="avatar-icon">🏪</div>
+                        <div class="ai-badge">AI分析</div>
+                    </div>
+                    <div class="character-info">
+                        <h3 class="character-name">江戸屋金蔵</h3>
+                        <p class="character-role">商人</p>
+                        <p class="character-quote">「商売のカンがAIで数値化できるとは！」</p>
+                        <div class="character-ai-uses">
+                            <span class="ai-use">需要予測</span>
+                            <span class="ai-use">帳簿管理</span>
+                            <span class="ai-use">販促文案</span>
+                        </div>
+                        <button class="character-detail-btn" data-character="merchant">詳しく見る</button>
+                    </div>
+                </div>
+
+                <!-- 職人 -->
+                <div class="character-item" data-character="artisan">
+                    <div class="character-avatar">
+                        <div class="avatar-icon">🎨</div>
+                        <div class="ai-badge">画像生成AI</div>
+                    </div>
+                    <div class="character-info">
+                        <h3 class="character-name">歌麿II</h3>
+                        <p class="character-role">浮世絵師</p>
+                        <p class="character-quote">「絵筆とAIの合わせ技、これぞ新時代の浮世絵じゃ！」</p>
+                        <div class="character-ai-uses">
+                            <span class="ai-use">下絵生成</span>
+                            <span class="ai-use">柄デザイン</span>
+                            <span class="ai-use">3D設計</span>
+                        </div>
+                        <button class="character-detail-btn" data-character="artisan">詳しく見る</button>
+                    </div>
+                </div>
+
+                <!-- 芸者 -->
+                <div class="character-item" data-character="geisha">
+                    <div class="character-avatar">
+                        <div class="avatar-icon">🎭</div>
+                        <div class="ai-badge">音楽AI</div>
+                    </div>
+                    <div class="character-info">
+                        <h3 class="character-name">桜子</h3>
+                        <p class="character-role">芸者</p>
+                        <p class="character-quote">「三味線の新曲がこんなに簡単に！お座敷が華やぐわ〜」</p>
+                        <div class="character-ai-uses">
+                            <span class="ai-use">AI作曲</span>
+                            <span class="ai-use">振付け</span>
+                            <span class="ai-use">カスタム演奏</span>
+                        </div>
+                        <button class="character-detail-btn" data-character="geisha">詳しく見る</button>
+                    </div>
+                </div>
+
+                <!-- 学者 -->
+                <div class="character-item" data-character="scholar">
+                    <div class="character-avatar">
+                        <div class="avatar-icon">📚</div>
+                        <div class="ai-badge">翻訳AI</div>
+                    </div>
+                    <div class="character-info">
+                        <h3 class="character-name">青木玄道</h3>
+                        <p class="character-role">蘭学者</p>
+                        <p class="character-quote">「オランダ語の文献がこんなに早く読めるとは！」</p>
+                        <div class="character-ai-uses">
+                            <span class="ai-use">自動翻訳</span>
+                            <span class="ai-use">データ解析</span>
+                            <span class="ai-use">図解化</span>
+                        </div>
+                        <button class="character-detail-btn" data-character="scholar">詳しく見る</button>
+                    </div>
+                </div>
+
+                <!-- 農民 -->
+                <div class="character-item" data-character="farmer">
+                    <div class="character-avatar">
+                        <div class="avatar-icon">🌾</div>
+                        <div class="ai-badge">予測AI</div>
+                    </div>
+                    <div class="character-info">
+                        <h3 class="character-name">田中与作</h3>
+                        <p class="character-role">農民</p>
+                        <p class="character-quote">「今年は豊作間違いなし！AIのお陰だべ〜」</p>
+                        <div class="character-ai-uses">
+                            <span class="ai-use">天候予測</span>
+                            <span class="ai-use">害虫警告</span>
+                            <span class="ai-use">成長管理</span>
+                        </div>
+                        <button class="character-detail-btn" data-character="farmer">詳しく見る</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- インタラクティブ体験セクション -->
+    <section id="experience" class="experience-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-decoration">🎮</span>
+                江戸×AI体験コーナー
+                <span class="title-decoration">⚡</span>
+            </h2>
+            
+            <div class="experience-grid">
+                <div class="experience-card haiku-generator">
+                    <div class="card-icon">🌸</div>
+                    <h3>俳句生成器</h3>
+                    <p>季節のキーワードを入力して、AIと一緒に江戸風俳句を作ってみよう！</p>
+                    <button class="experience-btn">俳句を作る</button>
+                </div>
+                
+                <div class="experience-card avatar-creator">
+                    <div class="card-icon">🎭</div>
+                    <h3>浮世絵アバター</h3>
+                    <p>あなたの写真を浮世絵風に変換！江戸時代の人物になりきろう</p>
+                    <button class="experience-btn">変換する</button>
+                </div>
+                
+                <div class="experience-card merchant-sim">
+                    <div class="card-icon">💰</div>
+                    <h3>江戸商人シミュレーター</h3>
+                    <p>AIアドバイスを受けながら江戸時代の商売を体験してみよう</p>
+                    <button class="experience-btn">商売開始</button>
+                </div>
+                
+                <div class="experience-card music-creator">
+                    <div class="card-icon">🎵</div>
+                    <h3>三味線作曲体験</h3>
+                    <p>AIの力を借りて、三味線の美しい旋律を作ってみよう</p>
+                    <button class="experience-btn">作曲する</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 知識・比較セクション -->
+    <section id="knowledge" class="knowledge-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-decoration">📖</span>
+                江戸×AIの深掘り知識
+                <span class="title-decoration">🧠</span>
+            </h2>
+            
+            <div class="knowledge-content">
+                <div class="comparison-table">
+                    <h3>時代別タスク効率比較</h3>
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>タスク</th>
+                                    <th>江戸時代</th>
+                                    <th>現代</th>
+                                    <th>江戸×AI時代</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>俳句作成</td>
+                                    <td>数時間〜数日</td>
+                                    <td>30分〜数時間</td>
+                                    <td>数分（AI支援）</td>
+                                </tr>
+                                <tr>
+                                    <td>商売帳簿</td>
+                                    <td>手計算で1日</td>
+                                    <td>表計算で数時間</td>
+                                    <td>AI自動化で数分</td>
+                                </tr>
+                                <tr>
+                                    <td>浮世絵制作</td>
+                                    <td>数週間〜数ヶ月</td>
+                                    <td>デジタルで数日</td>
+                                    <td>AI下絵で数時間</td>
+                                </tr>
+                                <tr>
+                                    <td>新曲作成</td>
+                                    <td>数ヶ月</td>
+                                    <td>DTMで数日</td>
+                                    <td>AI作曲で数時間</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <div class="knowledge-cards">
+                    <div class="knowledge-card">
+                        <h4>江戸時代の実際の文化</h4>
+                        <p>江戸時代（1603-1868年）は、武士・百姓・町人という身分制度の中で、豊かな庶民文化が花開いた時代でした。現在の研究では「士農工商」という厳格な序列はなく、むしろ各職業が専門性を持った分業社会だったことが分かっています。</p>
+                    </div>
+                    
+                    <div class="knowledge-card">
+                        <h4>現代AI技術の基礎</h4>
+                        <p>生成AI（ChatGPT、DALL-E、Suno AI等）は、大量のデータから学習したニューラルネットワークを使用して、テキスト・画像・音楽などのコンテンツを自動生成する技術です。2022年以降急速に普及し、様々な分野で活用されています。</p>
+                    </div>
+                    
+                    <div class="knowledge-card">
+                        <h4>融合の可能性</h4>
+                        <p>江戸時代の職人精神と現代AI技術を組み合わせることで、伝統文化の継承と革新が同時に実現できる可能性があります。AIが下地を作り、人間が仕上げるという協働スタイルは、現代のクリエイティブ分野でも注目されています。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 未来想像セクション -->
+    <section id="future" class="future-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-decoration">🔮</span>
+                AIと伝統文化の未来
+                <span class="title-decoration">🌟</span>
+            </h2>
+            
+            <div class="future-content">
+                <div class="future-scenarios">
+                    <div class="scenario-card">
+                        <h3>🎨 デジタル浮世絵の復活</h3>
+                        <p>AI技術により、失われた浮世絵の技法を復元し、現代的なテーマで新しい浮世絵を制作する芸術家が登場するかもしれません。</p>
+                    </div>
+                    
+                    <div class="scenario-card">
+                        <h3>🎭 AI歌舞伎・能楽</h3>
+                        <p>古典芸能にAI技術を取り入れ、新しい演目や演出方法が生まれ、若い世代にも親しまれる形に進化するかもしれません。</p>
+                    </div>
+                    
+                    <div class="scenario-card">
+                        <h3>🏮 スマート祭り</h3>
+                        <p>AI予測により混雑を管理し、VR/ARで遠隔参加も可能な、伝統と技術が融合した新しい祭りの形が実現するかもしれません。</p>
+                    </div>
+                </div>
+                
+                <div class="user-input-section">
+                    <h3>あなたの「もしも」アイデア</h3>
+                    <p>江戸時代にAIがあったら、他にどんな面白いことが起こると思いますか？</p>
+                    <div class="input-container">
+                        <textarea placeholder="あなたのアイデアを書いてください..." rows="4"></textarea>
+                        <button class="submit-idea-btn">アイデア投稿</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>🎭 江戸×AI</h3>
+                    <p>歴史と技術の架け橋として、楽しく学べるコンテンツを提供しています。</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>サイト情報</h4>
+                        <ul>
+                            <li><a href="#about">このサイトについて</a></li>
+                            <li><a href="#contact">お問い合わせ</a></li>
+                            <li><a href="#privacy">プライバシーポリシー</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h4>関連リンク</h4>
+                        <ul>
+                            <li><a href="https://github.com/Sunwood-ai-labs/edo-ai-site" target="_blank">GitHub</a></li>
+                            <li><a href="#blog">開発ブログ</a></li>
+                            <li><a href="#api">API情報</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 江戸×AI Project. Made with ❤️ by Sunwood AI Labs</p>
+                <p>🤖 Generated with <a href="https://claude.ai/code" target="_blank">Claude Code</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- キャラクター詳細モーダル -->
+    <div id="characterModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modalContent">
+                <!-- 動的にコンテンツが挿入される -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
