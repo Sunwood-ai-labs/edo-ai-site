@@ -4,6 +4,8 @@
 
 # 🎭✨ 江戸時代に生成AIがあったら？
 
+
+
 <p>
   <img alt="GitHub" src="https://img.shields.io/github/license/Sunwood-ai-labs/edo-ai-site">
   <img alt="GitHub package.json version" src="https://img.shields.io/github/package-json/v/Sunwood-ai-labs/edo-ai-site">
